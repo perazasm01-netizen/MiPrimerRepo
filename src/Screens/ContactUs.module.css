@@ -1,0 +1,192 @@
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css');
+
+* {
+    box-sizing: border-box;
+}
+
+.login_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.form_container {
+    margin: 5vh auto;
+    width: clamp(200px, 45vw, 400px);
+    min-height: 75vh;
+    background-color: #ffe4c4;
+    border: 3px solid #ff6a2f;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: #df5a50 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center; 
+    align-items: center;
+}
+
+
+.Map {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+}
+
+.Location {
+    width: 95%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+    box-shadow: #faaf56 0 0 50px;
+    border: #faaf56 3px solid;
+}
+
+.header {
+    font-size: clamp(24px, 8vw, 64px);
+    background-image: linear-gradient(to right, #af2a6f, #ff6a2f);
+    background-clip: text;
+    color: transparent;
+    text-decoration: underline solid #ff6a2f;
+    text-underline-offset: 10px;
+}
+
+.Main {
+    width: 95%;
+    background-color: #eaac8d;
+    border-radius: 20px;
+    height: 350px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
+    align-items: center;
+    padding: 10px;
+}
+
+.inputs {
+    margin: 0 auto;
+    background-color: azure;
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    gap: 2%;
+}
+
+.input {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    padding: 4px;
+    outline: none;
+    color: #3d3d3d;
+    border-bottom: none;
+    transition: all 0.3s;
+}
+
+.input_message{
+    margin: 0 auto;
+    background-color: azure;
+    padding: 10px;
+    width: 90%;
+    height: 100%;
+    text-align: start;
+    border-radius: 10px;
+    display: flex;
+    gap: 2%;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    outline: none;
+    border: none;
+    resize: none;
+    overflow: auto;
+}
+
+.message::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.input:invalid {
+    border-bottom: 3px solid #ff5030;
+}
+
+.input:valid{
+    border-bottom: 3px solid #c0ffc0;
+}
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 10px;
+    gap:2ex;
+}
+
+.Accessbutton {
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #6f5d5d;
+    box-shadow: #ff2a6f 0 0 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.Accessbutton:hover {
+    scale: 1.05;
+    background-color: #ff3a30;
+    color: white;
+    box-shadow: #ff2a3f 0 0 10px;
+}
+
+.ClickHere {
+    color: #ff3a30;
+    text-decoration: none;
+}
+
+.NoHidebtn {
+    margin: auto auto;
+    width: 15%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    cursor: pointer;
+    color: #8f8f8f;
+}
+
+@media (max-width: 720px) {
+    .login_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form_container {
+        width: 75%;
+    }
+
+    .Map {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 70ex;
+    padding: 2%;
+    }
+}

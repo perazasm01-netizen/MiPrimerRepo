@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 102%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.NavBar {
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(to right, #ff6f5f, #ff6f4f);
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: #af5030 0 1px 7px;
+}
+
+.Button {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #affb7f;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: none;
+}
+
+.Button:hover {
+    background-color: ffffff;
+    background-color: white;
+    scale: 1.1;
+    box-shadow: #cdffdf 0 0 10px;
+    color: #5cffcf;
+}
+
+.Button:active {
+    scale: initial;
+    background-color: antiquewhite;
+}
+
+#Logo {
+    background-color: #affb7f;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: black;
+}
+
+
+#Logo:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #cdffdf;
+    cursor: pointer;
+    color: #5cffcf;
+}
+
+.Logo_Box {
+    transition: all 0.3s;
+}
+
+.Logo_Box:hover {
+    scale: 1.1;
+}
+
+.Links {
+    list-style-type: none;
+    display: flex;
+}
+
+#Link_item {
+    display: inline-block;
+    background-color: #affb7f;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    margin: 5px ;
+    transition: all 0.3s;
+}
+
+#Link_item:hover {
+    transform: scale(1.1);
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #cdffdf;
+    color: #5cffcf;
+}
+
+@media (max-width: 920px) {
+
+    .Button {
+        display: block;
+    }
+
+    .Links {
+        position: absolute;
+        top: 60px;
+        right: -50vw;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        transition: all 0.3s;
+        background-color: #ff7f5f;
+        border-radius:0;
+    }
+
+    .Links.active {
+        right: 0;
+    }
+
+    #Link_item {
+        text-align: center;
+        background-color: #ff7f5f;
+        display: block;
+        margin: 0;
+        transition: all 0.2s;
+    }
+
+    #Link_item:hover {
+    scale: 1.05;
+    transform: none;
+    text-shadow: white 0 0 3px;
+    background-color: #ffffff;
+    border-radius: 0px;
+    border-radius: 2px;
+    box-shadow: #cdffdf 0 0 10px;
+    }
+}

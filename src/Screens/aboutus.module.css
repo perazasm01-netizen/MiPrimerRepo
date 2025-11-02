@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+.main_container {
+    width: 95%;
+    height: max-content;
+    background-color: #dfcfbf;
+    margin: 10px auto;
+    padding: 5vh;
+    border-radius: 25px;
+    color: #3f3f3faf;
+    box-shadow: #0000006f 0 10px 10px;
+}
+
+.head_box {
+    margin: 0 auto;
+    text-align: center;
+    max-width: max-content;
+    padding: 10px;
+    border-radius: 10px 10px 1px 1px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    background-image: linear-gradient(to bottom, #efdfcf, #dfcfbf);
+}
+
+.Title {
+    font-size: min(10ex, 10vw);
+}
+
+.small {
+    font-size: small;
+}
+
+.head_box_p {
+    text-align: center;
+    background-color: #e5d5c5;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: #b0a09050 0 0 10px;
+}
+
+.head_box_2 {
+    font-size: 200%;
+    padding: 10px;
+    width: max-content;
+    height: max-content;
+    margin: 10px;
+    text-shadow: #0000005f -2px 2px 5px;
+    background-color: #e5d5c5;
+    border-radius: 0 25px 25px 0;
+    border-left: burlywood solid 10px;
+}
+
+.teammates_list {
+    list-style: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.firstTeammate {
+    background-image: linear-gradient(to right, #ffffff80, transparent);
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    border-radius: 50px 0 0 50px;
+}
+
+.firstTeammate_Content {
+    width: 100%;
+    height: fit-content;
+}
+
+.firstTeammate_header {
+    font-size: 200%;
+    margin-bottom: 1ex;
+}
+
+.firstTeammate_p {
+    text-align: justify;
+    width: 100%;
+}
+
+.firstTeammate_img_1 {
+    background-image: url(https://media.istockphoto.com/id/1915382108/es/foto/gerente-de-la-dama-cauc%C3%A1sica-milenaria-confiada-y-amigable-sonriente-maestra-en-ropa-formal.jpg?s=612x612&w=0&k=20&c=XzkMX37ma5sOsY7MyjFrFPTCtBceOx2yjjFyiOAxfuU=);
+}
+
+.firstTeammate_img_1, .secondTeammate_img_1, .thirdTeammate_img_1 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    margin-right: 10px;
+    border-radius: 50px;
+    border: #ffffff solid 5px;
+    width: 200px;
+    height: 200px;
+    transition: all 0.3s;
+}
+
+.firstTeammate_img_1:hover, .secondTeammate_img_1:hover, .thirdTeammate_img_1:hover {
+    scale: 1.025;
+    border-color: #7ff;
+    box-shadow: 0 0 10px #7ff;
+}
+
+.secondTeammate {
+    background-image: linear-gradient(to left, #ffffff80, transparent);
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    text-align: end;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    border-radius: 0 50px 50px 0;
+}
+
+.secondTeammate_Content {
+    width: 100%;
+    text-align: end;
+}
+
+.secondTeammate_header {
+    font-size: 200%;
+    margin-bottom: 1ex;
+}
+
+.secondTeammate_p {
+    text-align: justify;
+    width: 100%;
+}
+
+.secondTeammate_img_1 {
+    background-image: url(https://www.shutterstock.com/image-photo/portrait-smiling-mid-adult-man-600nw-2606908661.jpg);
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.secondTeammate_img_1:hover {
+    scale: 1.025;
+}
+
+.thirdTeammate {
+    background-image: linear-gradient(to right, #ffffff80, transparent);
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    border-radius: 50px 0 0 50px;
+}
+
+.thirdTeammate_Content {
+    width: 100%;
+}
+
+.thirdTeammate_header {
+    font-size: 200%;
+    margin-bottom: 1ex;
+}
+
+.thirdTeammate_p {
+    text-align: justify;
+    width: 100%;
+}
+
+.thirdTeammate_img_1 {
+    background-image: url(https://www.conmishijos.com/uploads/educacion/autoestimapositiva.jpg);
+    border: #fff solid 5px;
+}
+
+@media (max-width: 720px) {
+    .firstTeammate, .secondTeammate, .thirdTeammate {
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .firstTeammate_img_1, .secondTeammate_img_1, .thirdTeammate_img_1 {
+        position: relative;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        width: 90%;
+    }
+}

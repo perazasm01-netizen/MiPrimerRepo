@@ -1,0 +1,155 @@
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.Footer {
+    margin-top: 10vh;
+    width: 100%;
+    height: 350px;
+    background-color: #dfcfbf;
+    text-align: center;
+    border-top: 10px solid #ff6868;
+    box-shadow: 0 -5px 15px #ff6868;
+    padding: 10px;
+}
+
+.Footer_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+}
+
+.Footer_element_1 {
+    min-height: 250px;
+    background-color: #efdfcf;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    gap: 10px;
+    border: 5px solid #90cfa0;
+    box-shadow: #90dfa0 0 0 10px;
+}
+
+.Footer_title {
+    font-size: 24px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #fa5656;
+    color: white;
+    text-shadow: 0 0 10px white;
+}
+
+.Contacts_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15%;
+    padding: 10px;
+    background-color: #e0d0c0;
+    height: 95%;
+    border-radius: 10px;
+}
+
+.Contact_item {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 24px;
+    color: #3c3c3c;
+    text-shadow: #cfaf9f 0 0 10px;
+}
+
+.Contact_link {
+    color: #3c3c3c;
+    text-decoration: none;
+    transition: all 0.3s;
+    animation: spin infinite linear 1.5s;
+    background-clip: text;
+    background-color: #3c3c3c;
+    font-size: 2ex;
+}
+
+.Contact_link:hover{
+    scale: 1.05;
+    color: transparent;
+    text-shadow: 0 0 10px #fff;
+    background-image: conic-gradient(from var(--angle),#3c3c3c, #ff0000 50%);
+}
+
+.Footer_element_2 {
+    background-color: #eadaca;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: #e0d0c0 0 0 10px;
+}
+
+.Footer_2_title {
+    background-color: #90cfa0;
+    font-size: 24px;
+    width: max-content;
+    color: white;
+    text-shadow: 0 0 10px white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.Questions_List {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 10px auto;
+    background-color: #dfcfbf;
+    padding: 2%;
+    border-radius: 10px;
+    gap: 10px;
+    overflow: auto;
+}
+
+.Questions_List::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.Answers {
+    text-align: start;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Answer {
+    color: #3c3c3c;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    initial-value: 0deg;
+    inherits: false;
+    syntax: "<angle>";
+}
