@@ -4,7 +4,7 @@ import styles from "./Whoops404.module.css"
 const Whoops404 = () => {
   return (
     <>
-      <div className={styles.Error}> . . . Oops! This page doesn't exist. :c <p className={styles.LittleText}>Error-404</p> </div>
+      <div className={styles.Error}>Cannot find the page<p className={styles.LittleText}>Error-404</p> </div>
 
 
       <div className={styles.NotFound}>
