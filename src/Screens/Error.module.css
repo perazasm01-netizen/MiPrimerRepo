@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 35vw;
+    height: 40vh;
+    min-height: 150px;
+
+    background: no-repeat center url(https://cdn-icons-png.flaticon.com/512/755/755014.png);
+    background-size: contain;
+    margin: 15vh auto;
+}
+
+.Err_msg {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: #fcca45;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: min(4vw, 3rem);
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+
+.small {
+    font-size: min(2vw, 1rem);
+}

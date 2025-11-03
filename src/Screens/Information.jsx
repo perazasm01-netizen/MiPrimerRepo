@@ -12,7 +12,6 @@ const Information = () => {
                 </div>
             </div>
 
-
             <div className={s.Image}>
                 
             </div>

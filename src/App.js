@@ -3,9 +3,9 @@ import AboutUs from "./Screens/aboutus";
 import ContactUs from "./Screens/ContactUs"
 import NavBar from "./Components/navbar"
 import { Routes, Route } from "react-router-dom";
-import Whoops404 from "./Screens/Whoops404";
 import Footer from "./Components/Footer"
 import Information from "./Screens/Information"
+import Error from "./Screens/Error"
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Route  path="/Home" element={<><Home/> <Footer Show="True"/></>} />
         <Route  path="/AboutUs" element={<><AboutUs/> <Footer Show="True"/></>} />
         <Route  path="/LogIn" element={<ContactUs/>} />
-        <Route  path="*" element={<Whoops404/>} />
+        <Route path="*" element={<Error/>}/>
       </Routes>
     </div>
   );
