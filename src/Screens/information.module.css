@@ -7,16 +7,16 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1%;
 }
 
 .main {
     width: 100%;
     height: 92vh;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: linear-gradient(to right, transparent, #faebd7);
 }
 
 .information {
@@ -41,17 +41,40 @@ body {
 
 .Image {
     background-image: url(https://static1.thegamerimages.com/wordpress/wp-content/uploads/2024/08/collage-of-streaming-service-logos.jpg?q=70&fit=contain&w=1200&h=628&dpr=1);
-
+    box-shadow: inset 10px 0 10px #faebd7;
     position: relative;
 }
 
 .Image::after {
     content: "";
+    translate: -50% -50%;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
-    translate: -50% -50%;
-    background: linear-gradient(to right, #faebd7 5%, transparent, #faebd7 95%);
+    background-image: linear-gradient(to right, #faebd7, transparent, #faebd7);
+}
+
+@media (max-width: 920px) {
+    .Image{
+        display: none;
+    }
+
+    .container {
+        display: block;
+        background-image: url(https://static1.thegamerimages.com/wordpress/wp-content/uploads/2024/08/collage-of-streaming-service-logos.jpg?q=70&fit=contain&w=1200&h=628&dpr=1);
+        background-position: center;
+        background-repeat: repeat;
+        box-shadow:  inset 0 0 100px #faebd7;
+    }
+
+    .main{
+        background-image: none;
+    }
+    
+    .information {
+        margin: 0 auto;
+    }
+
 }
