@@ -153,3 +153,27 @@ body {
     inherits: false;
     syntax: "<angle>";
 }
+
+@media (max-width:720px) {
+
+    .Footer{
+        height: max-content;
+    }
+    .Footer_container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: max-content;
+        gap: 10px;
+    }
+
+    .Footer_element_1 {
+        width: 100%;
+        min-width: 200px;
+    }
+
+    .Footer_element_2 {
+        min-width: 300px;
+    }
+}

@@ -9,9 +9,9 @@ const Footer = (Display) => {
                     <div className={s.Footer_element_1}>
                         <h3 className={s.Footer_title}>Social:</h3>
                         <ul className={s.Contacts_list}>
-                            <li className={s.Contact_item}><i class="fi fi-brands-instagram"></i><a href="https://instagram.com" className={s.Contact_link} target='_blank' rel='noreferrer'>Instagram</a></li>
-                            <li className={s.Contact_item}><i class="fi fi-brands-facebook"></i><a href="https://facebook.com" className={s.Contact_link} target='_blank' rel='noreferrer'>Facebook</a></li>
-                            <li className={s.Contact_item}> <i class="fi fi-brands-whatsapp"></i><a href="https://whatsapp.com" className={s.Contact_link} target='_blank' rel='noreferrer'>WhatsApp</a></li>
+                            <li className={s.Contact_item}><i className="fi fi-brands-instagram"></i><a href="https://instagram.com" className={s.Contact_link} target='_blank' rel='noreferrer'>Instagram</a></li>
+                            <li className={s.Contact_item}><i className="fi fi-brands-facebook"></i><a href="https://facebook.com" className={s.Contact_link} target='_blank' rel='noreferrer'>Facebook</a></li>
+                            <li className={s.Contact_item}> <i className="fi fi-brands-whatsapp"></i><a href="https://whatsapp.com" className={s.Contact_link} target='_blank' rel='noreferrer'>WhatsApp</a></li>
                         </ul>
                     </div>
 

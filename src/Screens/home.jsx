@@ -1,54 +1,78 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "./home.module.css"
 
     var counter = 0
   
 const Home = () => {
 
+  var localproduct = null;
   function Active(name) {
     var popover = document.getElementById("popover")
-    var popover_p = document.getElementById("popover_p")
-    var popover_T = document.getElementById("popover_T")
+    var popover_T = document.getElementById("popoverT")
+    var popover_p = document.getElementById("popoverP")
+    var Price_1 = document.getElementById("Price_1")
+    var Price_2 = document.getElementById("Price_2")
+    var Price_3 = document.getElementById("Price_3")
     var LogoPopover = document.getElementById("LogoPopover")
     var Spec_List = {
       "Disney_Plus": {
           "Name": "Disney_Plus",
           "Background": "url(https://wallpapercave.com/wp/wp2488102.jpg)",
           "Title": "Disney Plus",
-          "Text": "It guarantees all content on the platform without restrictions. For a cost of $4, you can obtain a membership for approximately four (4) months, and for a cost of $11, a one-year membership (12 months of service). It should be noted that we are not responsible for policy changes within the platform or other matters beyond our control."
+          "Text": "Disney+ is a streaming-platform that guarantees the content about all it's movies and series from Disney Studios.",
+          "Prices": ["4$ for 3 months", "9$ for 7 months", "12$ for 1 year"]
       },
       "HBOmax": {
         "Name": "HBOmax",
         "Background": "url(https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2020/04/hbo-max-logo-1922879.jpg?tf=3840x)",
         "Title": "HBOmax",
-        "Text": "It guarantees all content on the platform without restrictions. For a cost of $3, you can obtain a membership for approximately four (4) months; for $5, you can obtain six (6) months of service; and for a cost of $8, you can obtain a one (1) year membership (12 months of service). Please note that we are not responsible for policy changes within the platform or other matters beyond our control."
+        "Text": "HBOmax is the streaming-platform of Warner Bros.Discovery that guarantees content about series, movies, documentals, and kids content.",
+        "Prices": ["4$ for 3 months", "9$ for 7 months", "12$ for 1 year"]
       },
       "Prime_Video": {
         "Name": "Prime_Video",
         "Background":"url(https://m.media-amazon.com/images/G/01/AdProductsWebsite/images/campaigns/primeVideo/AMADS_2025_Sizzle_Q1_AThousandFutures_Pre_MasterHD_16x9_Poster11.jpg)",
         "Title":"Prime Video",
-        "Text":"Amazon's video streaming service offering movies, series, and other digital content. For $3, you can get 6 months of service, and for $5, you can get 12 months of service. This allows you to watch content included with your subscription, as well as rent or purchase recent titles. The platform also offers original Amazon content, called Amazon Originals, and the option to subscribe to additional channels."
+        "Text":"PrimeVideo is a streaming-platform provided by Amazon that includes movies, Tv-Series, sports, and more content.",
+        "Prices": ["3$ for 4 months", "7$ for 9 months", "11$ for 1 year"]
       },
       "Netflix":{
         "Name": "Netflix",
         "Background": "url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/06551278710263.5cad16152d3a6.jpg)",
         "Title": "Netflix",
-        "Text": "Netflix is a subscription streaming service that offers a wide variety of movies, series, documentaries, and more, which can be viewed on almost any device with an internet connection. There are currently three plans available: the first is a four-month plan for $3.50, the second is a nine-month plan for $7, and the last is a premium plan that allows you to download content from the platform for 12 months for $12."
-      },
+        "Text": "Netflix is a Streaming-platform that provides many content about series, movies, and documentals in dispositives that has an internet connection",
+        "Prices": ["4$ for 6 months", "5.5$ for 8 months", "7$ for 1 year"]
+      }
   }
 
 
     counter += 1
     if (counter %2 !== 0 && name){
+      localproduct = name
       popover.style.display = "grid"
+      LogoPopover.style.backgroundImage = Spec_List[name].Background
       popover_T.innerText = Spec_List[name].Title
       popover_p.innerText = Spec_List[name].Text
-      LogoPopover.style.backgroundImage = Spec_List[name].Background
+      Price_1.innerText = Spec_List[name].Prices[0]
+      Price_2.innerText = Spec_List[name].Prices[1]
+      Price_3.innerText = Spec_List[name].Prices[2]
     } else {
       popover.style.display = "none"
     }
+
+    return localproduct
   }
-  
+
+  const [info, Setinfo] = useState(true)
+
+  function setinfo() {
+    Setinfo(true)
+  }
+
+  function setprices() {
+    Setinfo(false)
+  }
+
   return (
     <div>
 
@@ -135,16 +159,23 @@ const Home = () => {
 
         </div>
 
-        <div className={styles.TextBox}>
+        <div className={styles.popover_container}>
+          <div className={styles.btns_wrapper}>
+            <button className={styles.infobtn} onClick={() => {setinfo()}}>Info</button>
+            <button className={styles.infobtn} onClick={() => {setprices()}}>Prices</button>
+          </div>
 
-        <div id="popover_T" className={styles.popover_T}>
-          IdkText
-        </div>
-              
-        <p className={styles.popover_p} id="popover_p">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem non, praesentium quo enim maiores dolorum molestias eligendi repudiandae nobis sed minima voluptatem. Nisi autem laboriosam deleniti magnam inventore. In.
-        </p>
-
+          <div className={styles.information}>
+            <div className={styles.popover_T} id='popoverT'></div>
+            <div className={styles.info}>
+              <div className={styles.popover_p} id='popoverP' style={info ? {display: "flex"}:{display:"none"}}></div>
+              <ul className={styles.PricesList} id='PricesList' style={info ? {display: "none"}:{display:"flex"}}>
+                <li className={styles.Price} id='Price_1'></li>
+                <li className={styles.Price} id='Price_2'></li>
+                <li className={styles.Price} id='Price_3'></li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <button onClick={() => {Active()}} className={styles.button} id='Close'>X</button>
