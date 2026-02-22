@@ -40,7 +40,10 @@ body {
 }
 
 .Image {
-    background-image: url(https://static1.thegamerimages.com/wordpress/wp-content/uploads/2024/08/collage-of-streaming-service-logos.jpg?q=70&fit=contain&w=1200&h=628&dpr=1);
+    background-image: url(https://www.simplilearn.com/ice9/free_resources_article_thumb/is_web_development_good_career.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
     box-shadow: inset 10px 0 10px #faebd7;
     position: relative;
 }
