@@ -8,7 +8,7 @@ const Information = () => {
             <div className={s.main}>
                 <div className={s.information}>
                     <h1 className={s.Title}>Welcome.</h1>
-                    <p className={s.welcome_p}>Welcome to our webpage. It was made for selling diferent services of streaming-platforms for those people that doesn't have the oportunity to buy one by themselves in the streaming-platforms official web-sites.</p>
+                    <p className={s.welcome_p}>Welcome to our webpage. It has been made for selling different courses of Web Development for those people that really wants to improve their web development skills.</p>
                 </div>
             </div>
 
