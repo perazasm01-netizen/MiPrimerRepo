@@ -129,23 +129,23 @@
     scale: 1.05;
 }
 
-.Product_4 {
-    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/06551278710263.5cad16152d3a6.jpg);
+.Product_4 { /* DataBaseDeveloper */
+    background-image: url(https://www.diplomadosonline.com/wp-content/uploads/2021/05/DDBD.png);
     box-shadow: #f53 0 0 10px;
 }
 
-.Product_3 {
-    background-image: url(https://e0.pxfuel.com/wallpapers/755/675/desktop-wallpaper-amazon-prime-video-te-trae-nuevo-contenido-para-este-mes-de-agosto-revista-estilo-honduras.jpg);
+.Product_3 { /* BackEndWebDeveloper */
+    background-image: url(https://www.diplomadosonline.com/wp-content/uploads/2023/07/BE.png);
     box-shadow: #5f3 0 0 10px;
 }
 
-.Product_2 {
-    background-image: url(https://i.pinimg.com/474x/8a/62/38/8a6238114ada8cb2339798fa7689fb86.jpg);
+.Product_2 { /* FrontEndWebDeveloper */
+    background-image: url(https://www.diplomadosonline.com/wp-content/uploads/2023/07/FE.png);
     box-shadow: #c4d 0 0 10px;
 }
 
-.Product_1 {
-    background-image: url(https://i.pinimg.com/236x/5a/ba/7e/5aba7e8e9852fe7df296150724fda177.jpg);
+.Product_1 { /* FullStackDeveloper */
+    background-image: url(https://www.diplomadosonline.com/wp-content/uploads/2021/06/Ms.FS_.jpg);
     box-shadow: #35f 0 0 10px;
 }
 

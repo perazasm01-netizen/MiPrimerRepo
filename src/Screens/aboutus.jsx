@@ -11,7 +11,7 @@ const AboutUs = () => {
           <h1 className={styles.Title}>Who we are?</h1>
         </div>
         <div className={styles.body_box}>
-          <p className={styles.head_box_p}>We are a group whose goal is to provide customers with access to various streaming platform services that they would not be able to access on their own, for one reason or another, and would have to resort to other people in order to obtain them.</p>
+          <p className={styles.head_box_p}>We are a group whose goal is to provide customers with access to various courses that are focused on the improvement of their web development skills, this webpage has been made with the knowledge provided by these courses.</p>
         </div>
         <br/>
           <br/>
@@ -27,7 +27,7 @@ const AboutUs = () => {
                 <div className={styles.firstTeammate_img_1} title='Geraldine Castro'/>
                 <div className={styles.firstTeammate_Content}>
                   <h3 className={styles.firstTeammate_header}>Geraldine Castro:</h3>
-                  <p className={styles.firstTeammate_header_p}>She's the owner of the website, she's the one that controls how the profiles are selling and who are the users of those profiles. You might talk to her if you want to buy anything. For contacting her you can go to the "Contact Us" section.</p>
+                  <p className={styles.firstTeammate_header_p}>She is the owner of the website and controls all payments and processes related to the purchase of the various web development courses. You should contact her if you want to make a purchase, either by going to the “Contact Us” section or via social media.</p>
                 </div>
               </div>
             </li>
@@ -39,7 +39,7 @@ const AboutUs = () => {
                 <div className={styles.secondTeammate_img_1} title='Jesus Peraza'></div>
                 <div className={styles.secondTeammate_Content}>
                   <h3 className={styles.secondTeammate_header}>Jesus Peraza:</h3>
-                  <p className={styles.secondTeammate_header_p}>He's the co-owner of the web-site, he helps with all the stuff when the other owner is not able to do it at the moment. Sometimes, he got clients too, so he sells some profiles. He manages the database that contain the data of all the profiles.</p>
+                  <p className={styles.secondTeammate_header_p}>He's the co-owner of the web-site, he helps with all the stuff when the other owner is not able to do it at the moment. Sometimes, he got clients too, so he sells some profiles. He manages the database that contain the data of all the website.</p>
                 </div>
               </div>
             </li>
@@ -51,7 +51,7 @@ const AboutUs = () => {
                 <div className={styles.thirdTeammate_img_1} title='Sebastian Peraza'></div>
                 <div className={styles.thirdTeammate_Content}>
                   <h3 className={styles.thirdTeammate_header}>Sebastian Peraza:</h3>
-                  <p className={styles.thirdTeammate_header_p}>He coded the whole web-page, he doesn't work or sells any profiles but is the web-page developer. He's still learning about the world of Front-End development, and its using his knowledge to do something useful.</p>
+                  <p className={styles.thirdTeammate_header_p}>He coded the whole web-page, the web-page developer. He's still learning about the world of Front-End development, and its using his knowledge to do something useful.</p>
                 </div>
               </div>
             </li>

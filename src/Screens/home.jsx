@@ -15,33 +15,33 @@ const Home = () => {
     var Price_3 = document.getElementById("Price_3")
     var LogoPopover = document.getElementById("LogoPopover")
     var Spec_List = {
-      "Disney_Plus": {
-          "Name": "Disney_Plus",
-          "Background": "url(https://wallpapercave.com/wp/wp2488102.jpg)",
-          "Title": "Disney Plus",
-          "Text": "Disney+ is a streaming-platform that guarantees the content about all it's movies and series from Disney Studios.",
-          "Prices": ["4$ for 3 months", "9$ for 7 months", "12$ for 1 year"]
+      "FullStack-Developer": {
+          "Name": "FullStack-Developer",
+          "Background": "url(https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190626123927/untitlsssssed.png)",
+          "Title": "FS Developer",
+          "Text": "Full stack knowledge encompasses the ability to develop a complete web application, including both the frontend (user interface) and the backend (server logic and database).",
+          "Prices": ["500$", null, null]
       },
-      "HBOmax": {
-        "Name": "HBOmax",
-        "Background": "url(https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2020/04/hbo-max-logo-1922879.jpg?tf=3840x)",
-        "Title": "HBOmax",
-        "Text": "HBOmax is the streaming-platform of Warner Bros.Discovery that guarantees content about series, movies, documentals, and kids content.",
-        "Prices": ["4$ for 3 months", "9$ for 7 months", "12$ for 1 year"]
+      "FrontEnd-Developer": {
+        "Name": "FrontEnd-Developer",
+        "Background": "url(https://media.istockphoto.com/id/1167600197/vector/front-end-development-web-banner-concept.jpg?s=170667a&w=0&k=20&c=eNl3Wt4rDh1KPUIP5AX4TkmaEk1K_9CMxDjlu5kR2mE=)",
+        "Title": "FE Developer",
+        "Text": "A front-end web developer creates the user-facing part of websites and applications, focusing on layout, design, and interactivity using HTML, CSS, and JavaScript",
+        "Prices": ["300$", null, null]
       },
-      "Prime_Video": {
-        "Name": "Prime_Video",
-        "Background":"url(https://m.media-amazon.com/images/G/01/AdProductsWebsite/images/campaigns/primeVideo/AMADS_2025_Sizzle_Q1_AThousandFutures_Pre_MasterHD_16x9_Poster11.jpg)",
-        "Title":"Prime Video",
-        "Text":"PrimeVideo is a streaming-platform provided by Amazon that includes movies, Tv-Series, sports, and more content.",
-        "Prices": ["3$ for 4 months", "7$ for 9 months", "11$ for 1 year"]
+      "BackEnd-Developer": {
+        "Name": "BackEnd-Developer",
+        "Background":"url(https://media.istockphoto.com/id/1167600251/vector/back-end-development-web-banner-concept.jpg?s=170667a&w=0&k=20&c=mfv4Pjj_hHX7l7UtKyokMi8T-PvK0dX7ZU_wxuzkmLg=)",
+        "Title":"BE Developer",
+        "Text":"A Back-End Web Developer builds and maintains the server-side technology, databases, and application logic that power the 'behind-scenes' functionality of websites and apps",
+        "Prices": ["350$", null, null]
       },
-      "Netflix":{
-        "Name": "Netflix",
-        "Background": "url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/06551278710263.5cad16152d3a6.jpg)",
-        "Title": "Netflix",
-        "Text": "Netflix is a Streaming-platform that provides many content about series, movies, and documentals in dispositives that has an internet connection",
-        "Prices": ["4$ for 6 months", "5.5$ for 8 months", "7$ for 1 year"]
+      "DataBase-Developer":{
+        "Name": "DataBase-Developer",
+        "Background": "url(https://ianttechnology.com/Content/images/banner-database.png)",
+        "Title": "DB Developer",
+        "Text": "A database developer is a software specialist responsible for designing, building, programming, and maintaining database systems to ensure secure, efficient data storage and retrieval",
+        "Prices": ["415$", null,null]
       }
   }
 
@@ -78,32 +78,32 @@ const Home = () => {
 
       <div className={styles.sec_1_Container}>
         <h1 id='Sec_1_Header' className={styles.Sec_1_Header}>Home!</h1>
-        <p id='Sec_1_p' className={styles.Sec_1_p}>In this page you'll find too much content about streaming platforms profiles that you can buy, obviosly, for it's cost. we have for selling some profiles like HBOMax, Netflix, PrimeVideo, DisneyPlus(+), and many others that wou'll find down here... please enjoy and if you have any questions, please make us know!</p>
+        <p id='Sec_1_p' className={styles.Sec_1_p}>This web page has been made for promoting different courses about web development, including: <em>Full-Stack, Front-End, Back-End, and Data Base development</em>. Maybe in a future we could have more products for offer, but this time we'll start with these ones. </p>
 
         <div className={styles.related_products_container}>
 
           <div className={styles.products}>
 
             <div className={styles.Product_1} id='Disney_Plus' onClick={() => {
-              Active("Disney_Plus")
+              Active("FullStack-Developer")
             }}>
 
             </div>
 
             <div className={styles.Product_2} id='HBOmax' onClick={() => {
-              Active("HBOmax")
+              Active("FrontEnd-Developer")
             }}>
 
             </div>
 
             <div className={styles.Product_3} id='Prime_Video' onClick={() => {
-              Active("Prime_Video")
+              Active("BackEnd-Developer")
             }}>
 
             </div>
 
             <div className={styles.Product_4} id='Netflix' onClick={() => {
-              Active("Netflix")
+              Active("DataBase-Developer")
             }}>
 
             </div>
@@ -113,25 +113,25 @@ const Home = () => {
           <div className={styles.products}>
 
             <div className={styles.Product_1} id='Disney_Plus' onClick={() => {
-              Active("Disney_Plus")
+              Active("FullStack-Developer")
             }}>
 
             </div>
 
             <div className={styles.Product_2} id='HBOmax' onClick={() => {
-              Active("HBOmax")
+              Active("FrontEnd-Developer")
             }}>
 
             </div>
 
             <div className={styles.Product_3} id='Prime_Video' onClick={() => {
-              Active("Prime_Video")
+              Active("BackEnd-Developer")
             }}>
 
             </div>
 
             <div className={styles.Product_4} id='Netflix' onClick={() => {
-              Active("Netflix")
+              Active("DataBase-Developer")
             }}>
 
             </div>
